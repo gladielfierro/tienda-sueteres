@@ -121,6 +121,89 @@
   .toast.show{transform:translateX(-50%) translateY(0)}
 
   @media(max-width:700px){nav ul{display:none}}
+
+  /* CONTACTO / RECLAMACIÓN */
+  .contacto{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;margin-top:34px;background:#fff;border-radius:18px;padding:28px;box-shadow:0 6px 20px rgba(59,42,36,.08)}
+  .contacto-info h3{color:var(--terracota);margin-bottom:6px;font-size:20px}
+  .contacto-info p{font-size:14px;color:var(--gris);margin-bottom:12px}
+  .contacto-info ul{list-style:none;font-size:14px;display:grid;gap:8px;margin-bottom:12px}
+  .contacto-info a{color:var(--terracota);font-weight:600;word-break:break-all}
+  .contacto-info a:hover{text-decoration:underline}
+  .contacto-info .mini{font-size:12px}
+  .contacto-form{display:grid;gap:12px}
+  .contacto-form label{display:grid;gap:4px;font-size:13px;font-weight:600;color:var(--cafe)}
+  .contacto-form input,.contacto-form select,.contacto-form textarea{padding:10px 12px;border:1.5px solid #d8cabb;border-radius:10px;font-size:14px;font-weight:400;background:#fff;width:100%}
+  .contacto-form textarea{resize:vertical}
+  .contacto-form input::placeholder,.rastreo input::placeholder{text-transform:none}
+  .contacto-form input:focus,.contacto-form select:focus,.contacto-form textarea:focus{outline:none;border-color:var(--terracota)}
+  .contacto-form .dos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .contacto-form .checks{display:grid;gap:6px}
+  .contacto-form .checks label{display:flex;align-items:center;gap:8px;font-weight:400}
+  .contacto-form .checks input{width:auto}
+  .enviar{background:var(--terracota);color:#fff;border:none;border-radius:12px;padding:13px;font-size:15px;font-weight:700;cursor:pointer}
+  .enviar:hover{background:var(--terracota-osc)}
+  .ok{display:none;background:#e6f4ea;color:#1e5e2e;border-radius:10px;padding:12px 14px;font-size:14px}
+  .ok.show{display:block}
+  @media(max-width:760px){.contacto{grid-template-columns:1fr}.contacto-form .dos{grid-template-columns:1fr}}
+
+  /* FINALIZAR PEDIDO */
+  .rastreo.pedido{width:min(760px,100%);padding:38px}
+  .rastreo.pedido .contacto-form{gap:18px;margin-top:6px}
+  .rastreo.pedido .contacto-form label{font-size:14px;gap:6px}
+  .rastreo.pedido .contacto-form input{padding:14px 15px;font-size:16px}
+  .rastreo.pedido .contacto-form .dos{gap:18px}
+  .rastreo.pedido .form-tit{font-size:17px;margin:12px 0 0;padding-bottom:6px;border-bottom:1px solid var(--arena)}
+  .rastreo.pedido .enviar{padding:16px;font-size:17px;margin-top:8px}
+  .rastreo.pedido .linea-res{padding:14px 0;font-size:15px}
+  .rastreo.pedido .linea-res img,.rastreo.pedido .linea-res svg{width:56px;height:68px}
+  .rastreo.pedido .total-res{font-size:20px;padding:16px 0 20px}
+  .linea-res{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--arena);font-size:14px}
+  .linea-res img,.linea-res svg{width:46px;height:56px;object-fit:cover;border-radius:8px;background:var(--arena);flex-shrink:0}
+  .linea-res div{flex:1}
+  .linea-res small{display:block;color:var(--gris)}
+  .total-res{display:flex;justify-content:space-between;font-weight:700;font-size:18px;padding:12px 0 16px}
+  .exito{text-align:center}
+  .exito .ic{font-size:46px;line-height:1.1}
+  .exito h3{margin:6px 0 4px}
+  .guia-box{background:var(--crema);border:2px dashed var(--terracota);border-radius:14px;padding:14px;margin:16px 0}
+  .guia-box span{font-size:13px;color:var(--gris)}
+  .guia-box b.g{display:block;font-size:21px;letter-spacing:1px;color:var(--terracota);margin:4px 0 8px;word-break:break-all}
+  .copiar{background:#fff;border:1.5px solid var(--terracota);color:var(--terracota);border-radius:20px;padding:4px 14px;font-size:12px;font-weight:700;cursor:pointer}
+  .datos{text-align:left;font-size:14px;display:grid;gap:8px;background:var(--crema);border-radius:12px;padding:14px;margin-bottom:12px}
+  .datos small{color:var(--gris);display:block}
+  .tips{text-align:left;font-size:13px;color:var(--gris);background:#fff4e5;border-left:4px solid #f0a030;border-radius:8px;padding:12px 14px;margin:12px 0}
+  .tips a{color:var(--terracota);font-weight:700;text-decoration:underline;cursor:pointer}
+  .acc{display:grid;gap:10px;margin-top:14px}
+  .btn-p{background:var(--terracota);color:#fff;border:none;border-radius:12px;padding:13px;font-weight:700;cursor:pointer;font-size:15px}
+  .btn-p:hover{background:var(--terracota-osc)}
+  .btn-s{background:transparent;color:var(--terracota);border:1.5px solid var(--terracota);border-radius:12px;padding:12px;font-weight:700;cursor:pointer;font-size:15px}
+  .btn-s:hover{background:var(--crema)}
+  .form-tit{font-size:15px;color:var(--terracota);margin:6px 0 2px}
+
+  /* RASTREO */
+  .rastreo-fondo{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:250;padding:16px}
+  .rastreo-fondo.open{display:flex}
+  .rastreo{background:#fff;border-radius:22px;width:min(540px,100%);max-height:92vh;overflow:auto;padding:34px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+  .rastreo h3{color:var(--terracota);font-size:26px;margin-bottom:6px}
+  .rastreo .cerrar{float:right}
+  .rastreo p.s{color:var(--gris);font-size:15px;margin-bottom:20px}
+  .rastreo form.busca{display:flex;gap:8px}
+  .rastreo form.busca input{flex:1;padding:13px 15px;border:1.5px solid #d8cabb;border-radius:10px;font-size:16px}
+  .rastreo form.busca input:focus{outline:none;border-color:var(--terracota)}
+  .rastreo form.busca button{background:var(--terracota);color:#fff;border:none;border-radius:10px;padding:0 20px;font-weight:700;cursor:pointer;font-size:15px}
+  .ejemplos{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 4px;font-size:12px;color:var(--gris);align-items:center}
+  .ejemplos button{border:1px solid #d8cabb;background:var(--crema);border-radius:20px;padding:3px 10px;font-size:12px;cursor:pointer}
+  .res{margin-top:18px}
+  .res .cab{background:var(--crema);border-radius:12px;padding:14px;font-size:14px;margin-bottom:14px}
+  .res .estado{display:inline-block;background:#e6f4ea;color:#1e7e34;font-weight:700;font-size:12px;padding:3px 10px;border-radius:20px;margin-bottom:6px}
+  .res .estado.t{background:#e8f0fe;color:#1a56c4}
+  .res .estado.r{background:#fff4e5;color:#b86e00}
+  .linea{list-style:none;border-left:3px solid var(--arena);margin-left:8px;padding-left:18px}
+  .linea li{position:relative;padding-bottom:16px;font-size:14px}
+  .linea li::before{content:"";position:absolute;left:-26px;top:3px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--arena)}
+  .linea li.hecho::before{background:var(--terracota);border-color:var(--terracota)}
+  .linea li small{display:block;color:var(--gris)}
+  .noenc{background:#fdecea;color:#a12a1f;border-radius:10px;padding:12px 14px;font-size:14px}
 </style>
 </head>
 <body>
@@ -173,13 +256,13 @@
     </div>
 
     <div class="acciones">
-      <a href="https://www.paqueteria-ejemplo.com/rastreo" target="_blank" rel="noopener noreferrer" class="boton boton-envio">
+      <button type="button" class="boton boton-envio" onclick="abrirRastreo()" style="border:none;cursor:pointer;font-family:inherit">
         <span>📦</span> Consultar Estatus de Envío
-      </a>
+      </button>
       <a href="documento.pdf" target="_blank" rel="noopener noreferrer" class="boton boton-pdf">
         <span>📄</span> Manual de Envío
       </a>
-      <div class="aviso">💡 Ten a la mano tu <b>número de guía</b>, lo recibirás al confirmar tu pedido.</div>
+      <div class="aviso">💡 Ten a la mano tu <b>número de guía</b>, lo recibirás al confirmar tu pedido. Ejemplo: <b>GUIA0000000001</b></div>
     </div>
     <div style="height:50px"></div>
   </div>
@@ -192,6 +275,46 @@
     <div><h4>📦 Daños visibles</h4><p>Reclama dentro de las <b>48 horas hábiles</b> posteriores a la recepción. Si puedes, abre el paquete frente al repartidor y toma fotos.</p></div>
     <div><h4>🔍 Pérdida o extravío</h4><p>Reclama dentro de los <b>21 a 30 días</b> posteriores a la fecha de envío, según la paquetería.</p></div>
     <div><h4>📝 Qué necesitas</h4><p>Número de guía, factura del contenido, fotos del embalaje dañado y una descripción de lo ocurrido.</p></div>
+  </div>
+
+  <div class="contacto">
+    <div class="contacto-info">
+      <h3>Envíanos tu reclamación</h3>
+      <p>Llena el formulario o escríbenos y te respondemos lo antes posible.</p>
+      <ul>
+        <li>✉️ <a href="mailto:reclamaciones@hiloylana.example">reclamaciones@hiloylana.example</a></li>
+        <li>🕘 Lunes a viernes, 9:00 a 18:00</li>
+      </ul>
+      <p class="mini">Recuerda adjuntar tu factura y fotos del paquete cuando nos escribas por correo.</p>
+    </div>
+    <form class="contacto-form" id="formReclamo" onsubmit="enviarReclamo(event)">
+      <label>Número de guía
+        <input name="guia" required maxlength="30" placeholder="Ej. GUIA0000000001">
+      </label>
+      <div class="dos">
+        <label>Nombre
+          <input name="nombre" required maxlength="80" placeholder="Tu nombre completo">
+        </label>
+        <label>Correo
+          <input name="correo" type="email" required maxlength="100" placeholder="tucorreo@ejemplo.com">
+        </label>
+      </div>
+      <label>Tipo de problema
+        <select name="tipo" required>
+          <option value="dano">📦 Daño visible en el paquete</option>
+          <option value="perdida">🔍 Pérdida o extravío</option>
+        </select>
+      </label>
+      <label>¿Qué ocurrió?
+        <textarea name="descripcion" required rows="4" maxlength="800" placeholder="Describe brevemente lo que pasó"></textarea>
+      </label>
+      <div class="checks">
+        <label><input type="checkbox" name="factura"> Tengo mi factura o comprobante</label>
+        <label><input type="checkbox" name="fotos"> Tengo fotos del paquete</label>
+      </div>
+      <button type="submit" class="enviar">Enviar reclamación</button>
+      <div class="ok" id="okReclamo" role="status"></div>
+    </form>
   </div>
 </section>
 
@@ -212,6 +335,78 @@
   </div>
 </aside>
 <div class="toast" id="toast"></div>
+
+<!-- FINALIZAR PEDIDO -->
+<div class="rastreo-fondo" id="pedidoFondo" onclick="if(event.target===this)cerrarPedido()">
+  <div class="rastreo pedido" role="dialog" aria-label="Finalizar pedido">
+    <button class="cerrar" onclick="cerrarPedido()" aria-label="Cerrar">×</button>
+    <div id="pedidoPaso1">
+      <h3>🛍️ Finalizar pedido</h3>
+      <p class="s">Revisa tu pedido y captura tus datos de envío.</p>
+      <div id="pedidoResumen"></div>
+      <form class="contacto-form" id="formPedido" onsubmit="confirmarPedido(event)">
+        <h4 class="form-tit">Datos de contacto</h4>
+        <label>Nombre completo
+          <input name="nombre" required maxlength="80" placeholder="Tu nombre">
+        </label>
+        <div class="dos">
+          <label>Correo
+            <input name="correo" type="email" required maxlength="100" placeholder="tucorreo@ejemplo.com">
+          </label>
+          <label>Teléfono (10 dígitos)
+            <input name="telefono" type="tel" required pattern="[0-9]{10}" maxlength="10" inputmode="numeric" placeholder="6681234567">
+          </label>
+        </div>
+        <h4 class="form-tit">Dirección de envío</h4>
+        <div class="dos">
+          <label>Calle y número
+            <input name="calle" required maxlength="100" placeholder="Calle Ejemplo 123">
+          </label>
+          <label>Colonia
+            <input name="colonia" required maxlength="80" placeholder="Centro">
+          </label>
+        </div>
+        <div class="dos">
+          <label>Ciudad
+            <input name="ciudad" required maxlength="60" placeholder="Los Mochis">
+          </label>
+          <label>Estado
+            <input name="estado" required maxlength="40" placeholder="Sinaloa">
+          </label>
+        </div>
+        <div class="dos">
+          <label>Código postal
+            <input name="cp" required pattern="[0-9]{5}" maxlength="5" inputmode="numeric" placeholder="81200">
+          </label>
+          <label>Referencias
+            <input name="referencias" required maxlength="150" placeholder="Casa blanca, portón negro">
+          </label>
+        </div>
+        <button type="submit" class="enviar">Confirmar pedido</button>
+      </form>
+    </div>
+    <div id="pedidoPaso2" class="exito" style="display:none"></div>
+  </div>
+</div>
+
+<!-- RASTREO DE ENVÍOS (demo) -->
+<div class="rastreo-fondo" id="rastreoFondo" onclick="if(event.target===this)cerrarRastreo()">
+  <div class="rastreo" role="dialog" aria-label="Consultar estatus de envío">
+    <button class="cerrar" onclick="cerrarRastreo()" aria-label="Cerrar">×</button>
+    <h3>📦 Estatus de envío</h3>
+    <p class="s">Escribe tu número de guía para ver cómo va tu paquete.</p>
+    <form class="busca" onsubmit="rastrear(event)">
+      <input id="guia" placeholder="Ej. GUIA0000000001" autocomplete="off" maxlength="30">
+      <button type="submit">Buscar</button>
+    </form>
+    <div class="ejemplos">Prueba con:
+      <button type="button" onclick="probar('GUIA0000000001')">GUIA0000000001</button>
+      <button type="button" onclick="probar('GUIA0000000002')">GUIA0000000002</button>
+      <button type="button" onclick="probar('GUIA0000000003')">GUIA0000000003</button>
+    </div>
+    <div class="res" id="resultado"></div>
+  </div>
+</div>
 <div class="visor" id="visor" onclick="this.classList.remove('open')"><img id="visorImg" alt=""></div>
 
 <script>
@@ -318,15 +513,146 @@ function actualizar(){
 }
 function abrirCarrito(){ document.getElementById("panel").classList.add("open"); document.getElementById("overlay").classList.add("open"); }
 function cerrarCarrito(){ document.getElementById("panel").classList.remove("open"); document.getElementById("overlay").classList.remove("open"); }
+/* ===== Finalizar pedido ===== */
+const esc = s => String(s).replace(/[<>&"]/g, "");
+const totalCarrito = () => carrito.reduce((s,i)=>s+i.cant*PRODUCTOS.find(x=>x.id===i.id).precio,0);
+function sumarHabiles(f,n){ const d=new Date(f); while(n>0){ d.setDate(d.getDate()+1); if(d.getDay()!==0 && d.getDay()!==6) n--; } return d; }
+const fechaLarga = d => d.toLocaleDateString("es-MX",{weekday:"long",day:"numeric",month:"long"});
+const fechaHora = d => d.toLocaleString("es-MX",{day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",hour12:false}).replace(",","");
+
 function finalizar(){
-  carrito = []; actualizar(); cerrarCarrito();
-  aviso("¡Pedido recibido! Te enviaremos tu número de guía por correo.");
+  if(!carrito.length) return;
+  cerrarCarrito();
+  document.getElementById("pedidoResumen").innerHTML = resumenHTML() +
+    `<div class="total-res"><span>Total</span><span>${fmt(totalCarrito())}</span></div>`;
+  document.getElementById("pedidoPaso1").style.display = "block";
+  document.getElementById("pedidoPaso2").style.display = "none";
+  document.getElementById("pedidoFondo").classList.add("open");
 }
+function resumenHTML(){
+  return carrito.map(i=>{
+    const p = PRODUCTOS.find(x=>x.id===i.id);
+    return `<div class="linea-res">${miniatura(p)}<div><b>${p.nombre}</b><small>Talla ${i.talla} · ${i.cant} × ${fmt(p.precio)}</small></div><b>${fmt(i.cant*p.precio)}</b></div>`;
+  }).join("");
+}
+function cerrarPedido(){ document.getElementById("pedidoFondo").classList.remove("open"); }
+
+function confirmarPedido(e){
+  e.preventDefault();
+  const f = e.target;
+  const ahora = new Date();
+  const folio = "PED-" + String(Date.now()).slice(-6);
+  let guia; do { guia = "GUIA" + String(Math.floor(Math.random()*1e10)).padStart(10,"0"); } while(ENVIOS[guia]);
+  const desde = sumarHabiles(ahora,3), hasta = sumarHabiles(ahora,5);
+  const destino = `${esc(f.ciudad.value)}, ${esc(f.estado.value)}`;
+  const resumen = resumenHTML();
+  const total = fmt(totalCarrito());
+  const piezas = carrito.reduce((s,i)=>s+i.cant,0);
+
+  // Registra la guía para que se pueda consultar en "Consultar Estatus de Envío"
+  ENVIOS[guia] = {paqueteria:"Paquetería Ejemplo", estado:"Preparando", clase:"r", destino, pasos:[
+    ["Pedido recibido", "Folio " + folio, fechaHora(ahora), true],
+    ["Pedido empacado", "Caja nueva, relleno y sellado en H", "Pendiente", false],
+    ["Paquete recolectado", "", "Pendiente", false],
+    ["En tránsito", "", "Pendiente", false],
+    ["En reparto", "", "Pendiente", false],
+    ["Entregado", "", "Pendiente", false]]};
+
+  document.getElementById("pedidoPaso2").innerHTML = `
+    <div class="ic">🎉</div>
+    <h3 style="color:var(--terracota);font-size:24px">¡Pedido recibido!</h3>
+    <p class="s" style="margin-bottom:0">Gracias, ${esc(f.nombre.value.split(" ")[0])}. Enviamos la confirmación a <b>${esc(f.correo.value)}</b>.</p>
+    <div class="guia-box">
+      <span>Tu número de guía</span>
+      <b class="g" id="guiaNueva">${guia}</b>
+      <button type="button" class="copiar" onclick="copiarGuia('${guia}',this)">Copiar guía</button>
+    </div>
+    <div class="datos">
+      <div><small>Folio del pedido</small><b>${folio}</b></div>
+      <div><small>Entrega estimada</small><b>Entre el ${fechaLarga(desde)} y el ${fechaLarga(hasta)}</b></div>
+      <div><small>Se enviará a</small>${esc(f.calle.value)}, ${esc(f.colonia.value)}, ${destino}, C.P. ${esc(f.cp.value)}<small>Ref.: ${esc(f.referencias.value)}</small><small>Tel. ${esc(f.telefono.value)}</small></div>
+    </div>
+    <div style="text-align:left">${resumen}<div class="total-res"><span>Total (${piezas} ${piezas===1?"pieza":"piezas"})</span><span>${total}</span></div></div>
+    <div class="tips">📦 Revisa tu paquete al recibirlo: si llega dañado, reclama dentro de las <b>48 horas hábiles</b>.
+      <a onclick="cerrarPedido();location.hash='#reclamaciones'">Ver cómo reclamar</a>. Te enviaremos las instrucciones de pago a tu correo.</div>
+    <div class="acc">
+      <button type="button" class="btn-p" onclick="cerrarPedido();abrirRastreo();probar('${guia}')">📍 Rastrear mi envío</button>
+      <button type="button" class="btn-s" onclick="cerrarPedido();location.hash='#catalogo'">Seguir comprando</button>
+    </div>`;
+  document.getElementById("pedidoPaso1").style.display = "none";
+  document.getElementById("pedidoPaso2").style.display = "block";
+  document.querySelector("#pedidoFondo .rastreo").scrollTop = 0;
+
+  carrito = []; actualizar();
+  f.reset();
+}
+function copiarGuia(g,btn){
+  try{ navigator.clipboard.writeText(g); btn.textContent = "¡Copiada!"; }
+  catch(_){ btn.textContent = "Selecciónala y cópiala"; }
+  setTimeout(()=>btn.textContent="Copiar guía", 2000);
+}
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") cerrarPedido(); });
 function aviso(msg){
   const t = document.getElementById("toast");
   t.textContent = msg; t.classList.add("show");
   clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove("show"), 2600);
 }
+/* ===== Rastreo de envíos (datos de ejemplo, equivalentes a la tabla envio_historial) ===== */
+const ENVIOS = {
+  "GUIA0000000001": {paqueteria:"Paquetería Ejemplo", estado:"En tránsito", clase:"t", destino:"Los Mochis, Sinaloa", pasos:[
+    ["Pedido empacado","Caja nueva, relleno y sellado en H","04/11/2026 09:30",true],
+    ["Paquete recolectado","Recolectado por la paquetería","04/11/2026 13:10",true],
+    ["En tránsito","En camino al centro de distribución destino","04/11/2026 18:45",true],
+    ["En reparto","El repartidor llevará tu paquete","Pendiente",false],
+    ["Entregado","","Pendiente",false]]},
+  "GUIA0000000002": {paqueteria:"Paquetería Ejemplo", estado:"Entregado", clase:"", destino:"Culiacán, Sinaloa", pasos:[
+    ["Pedido empacado","Caja nueva, relleno y sellado en H","28/10/2026 10:00",true],
+    ["Paquete recolectado","Recolectado por la paquetería","28/10/2026 14:20",true],
+    ["En tránsito","Llegó al centro de distribución","29/10/2026 08:15",true],
+    ["En reparto","Repartidor en camino","30/10/2026 09:40",true],
+    ["Entregado","Recibido por el destinatario","30/10/2026 12:05",true]]},
+  "GUIA0000000003": {paqueteria:"Paquetería Ejemplo", estado:"En reparto", clase:"r", destino:"Guasave, Sinaloa", pasos:[
+    ["Pedido empacado","Caja nueva, relleno y sellado en H","02/11/2026 11:00",true],
+    ["Paquete recolectado","Recolectado por la paquetería","02/11/2026 15:30",true],
+    ["En tránsito","Llegó al centro de distribución","03/11/2026 07:50",true],
+    ["En reparto","Tu paquete sale hoy a entrega","04/11/2026 08:20",true],
+    ["Entregado","","Pendiente",false]]}
+};
+function abrirRastreo(){ document.getElementById("rastreoFondo").classList.add("open"); setTimeout(()=>document.getElementById("guia").focus(),50); }
+function cerrarRastreo(){ document.getElementById("rastreoFondo").classList.remove("open"); }
+function probar(g){ document.getElementById("guia").value=g; rastrear(); }
+function rastrear(e){
+  if(e) e.preventDefault();
+  const g = document.getElementById("guia").value.trim().toUpperCase();
+  const out = document.getElementById("resultado");
+  if(!g){ out.innerHTML = ""; return; }
+  const d = ENVIOS[g];
+  if(!d){
+    out.innerHTML = `<div class="noenc">No encontramos la guía <b>${g.replace(/[<>&]/g,"")}</b>. Revisa el número o prueba con una de ejemplo.</div>`;
+    return;
+  }
+  out.innerHTML = `<div class="cab"><span class="estado ${d.clase}">${d.estado}</span><br>
+      <b>Guía:</b> ${g}<br><b>Paquetería:</b> ${d.paqueteria}<br><b>Destino:</b> ${d.destino}</div>
+    <ul class="linea">${d.pasos.map(p=>`<li class="${p[3]?'hecho':''}"><b>${p[0]}</b><small>${p[1]}${p[1]?' · ':''}${p[2]}</small></li>`).join("")}</ul>`;
+}
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") cerrarRastreo(); });
+
+/* ===== Reclamaciones (demo: se confirma en pantalla, no se guarda en ningún servidor) ===== */
+function enviarReclamo(e){
+  e.preventDefault();
+  const f = e.target;
+  const folio = "REC-" + Date.now().toString().slice(-6);
+  const faltan = [];
+  if(!f.factura.checked) faltan.push("tu factura o comprobante");
+  if(!f.fotos.checked) faltan.push("fotos del paquete");
+  const ok = document.getElementById("okReclamo");
+  ok.innerHTML = `✅ <b>Reclamación recibida.</b> Tu folio es <b>${folio}</b>. Te escribiremos a <b>${f.correo.value.replace(/[<>&"]/g,"")}</b> para darle seguimiento.` +
+    (faltan.length ? `<br>📎 Recuerda enviarnos ${faltan.join(" y ")}; sin eso no podemos procesar el reembolso.` : "");
+  ok.classList.add("show");
+  f.reset();
+  ok.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
 pintar(); actualizar();
 </script>
 </body>
